@@ -51,12 +51,13 @@ function fetchBookmarks(){
     for(var i = 0; i < bookmarks.length; i++){
       var name = bookmarks[i].name;
       var url = bookmarks[i].url;
+      var index = i;
   
       bookmarksResults.innerHTML += '<div class="well">'+
-                                    '<h3>'+name+
+                                    '<h5>'+ name  + '<br>' +
                                     ' <a class="btn btn-secondary" target="_blank" href="'+addhttp(url)+'">Visit</a> ' +
                                     ' <a onclick="deleteBookmark(\''+url+'\')" class="btn btn-danger" href="#">Delete</a> ' +
-                                    '</h3>'+
+                                    '</h5'+
                                     '</div>';
     }
   }
