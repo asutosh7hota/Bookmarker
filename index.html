@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Site Bookmarker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+   
+
+    <!-- Custom styles for this template -->
+    <link href="./css/jumbotron-narrow.css" rel="stylesheet">
+
+   
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <div class="container">
+      <div class="header clearfix">
+        
+        <h3 class="text-muted" align="center">Bookmarker</h3>
+      </div>
+    <!-- The form to take in User's input-->
+      <div class="jumbotron">
+        <h2>Bookmark your fav Website!</h2>
+        <form name="form1"  id="form1">
+            <div class="form-group">
+                <label>Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Website">
+            </div>
+
+            <div class="form-group">
+                    <label>Site URL</label>
+                    <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+                </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+
+    <div class="container">
+            <div class="col-lg-6">
+            <div id="bookmarksresults"></div>
+            </div>
+    </div>
+
+
+      <footer class="footer">
+        <p>&copy; 2016 Bookmarker, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
